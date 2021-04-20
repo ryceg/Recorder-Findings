@@ -1,0 +1,182 @@
+% Turabian Formatting for Theses and Dissertations, 2018/08/06
+%
+% Developed using the turabian-formatting package (2018/08/01), available through CTAN: http://www.ctan.org/pkg/turabian-formatting
+%
+% Additional document class formatting options:
+%
+% raggedright: ragged right formatting without hyphenations
+% authordate: support for the author-date citation style
+% endnotes: support for endnotes
+
+% document class handles the big-picture formatting
+\documentclass{article}
+
+% fancyhdr does fancy headers
+\usepackage{fancyhdr}
+
+% for glossaries
+\usepackage{glossaries}
+
+\usepackage{svg}
+
+% microtype handles microscopic improvements
+\usepackage{microtype}
+
+% graphicx handles graphics
+\usepackage{graphicx}
+
+% cmap makes pdfs searchable
+\usepackage{cmap}
+
+\usepackage[utf8]{inputenc}
+
+% csquotes handles quotations
+% ellipsis handles ellipses... obviously.
+\usepackage{csquotes, ellipsis}
+
+% allows half and half in tables.
+\usepackage{diagbox}
+
+% allows multiple rows
+\usepackage{multirow}
+
+% Specify paper size with geometry package
+% \usepackage[pass, letterpaper]{geometry}
+
+% For citations, use the biblatex-chicago package
+\usepackage[noibid]{biblatex-chicago}
+\addbibresource{backmatter/works-cited.bib}
+
+% For fancier tables.
+\usepackage{booktabs}
+
+% For left-aligned
+% \usepackage[document]{ragged2e}
+
+% For lorem ipsum text. use \lipsum[5] to create placeholder text.
+% Very handy to get an overview of how it's going to look, but also can make you feel unreasonably confident- beware!
+\usepackage{lipsum}
+
+\usepackage{xcolor}
+
+% hyperlinks! The option [hidelinks] makes it still black i.e. not obviously a hyperlink.
+\usepackage[hidelinks]{hyperref}
+\hypersetup{
+    colorlinks = false,
+    linkbordercolor = {white},
+    urlcolor = {blue}
+}
+
+\usepackage{caption} % hypcap is true by default so [hypcap=true] is optional in \usepackage[hypcap=true]{caption}
+
+% for referencing the titles of sections
+\usepackage{nameref}
+
+% for appendices
+\usepackage{appendix}
+
+% for including pdf pages
+\usepackage{pdfpages}
+
+\usepackage{epigraph}
+
+
+\makeglossaries{}
+
+\newglossaryentry{score}
+{
+    name=score,
+    description={The document that a composer creates}
+}
+
+\newglossaryentry{text}
+{
+    name=text,
+    description={}
+}
+
+\newglossaryentry{content}
+{
+    name=content,
+    description={The contents of the score}
+}
+
+\newglossaryentry{technique}
+{
+    name=technique,
+    description={An action that a performer performs.}
+}
+
+\newglossaryentry{icon} 
+{
+    name=icon,
+    description={which have a direct physical connection to the signified. Photographs are an example of icons.}
+}
+
+\newglossaryentry{index} 
+{
+    name=index,
+    description={which show evidence of the signified. The most common example being smoke indexing fire.}
+}
+
+\newglossaryentry{symbol} 
+{
+    name=symbol,
+    description={which have no resemblance between the signifier and the signified; their meaning must be culturally learned. Arabic numerals, the radioactive symbol, and flags are all symbols.}
+}
+
+\newglossaryentry{denotation} 
+{
+    name=denotation,
+    description={the basic or literal meaning of the sign (i.e.\ a rose signifies the flower of the genus \emph{Rosa} of the family \emph{Rosaceae})}
+}
+
+\newglossaryentry{connotation} 
+{
+    name=connotation,
+    description={the secondary, culturally inferred meaning; a rose might also signify passion or love, depending on the context.}
+}
+
+
+
+% Information for title page
+\title{Constructing New Techniques}
+% \subtitle{An Investigation in New String Techniques}
+\author{Rhys Gray}
+% \course{Bachelor of Music (Honours)}
+% \institution{University of Tasmania}
+% \department{Conservatorium of Music}
+% \location{Hobart, Tasmania}
+\date{\today}
+
+
+% this is where the document starts. Comment out things that you don't need.
+\begin{document}
+
+% \frontmatter{}
+\maketitle
+
+% \mainmatter{}
+\include{mainmatter/introduction}
+\include{mainmatter/chapter1}
+\include{mainmatter/chapter2}
+\include{mainmatter/chapter3}
+\include{mainmatter/chapter4}
+% \include{mainmatter/conclusion}
+
+% \backmatter{}
+
+% \begin{appendixes}
+%     \include{backmatter/app0}
+%     \include{backmatter/app5}
+%     \include{backmatter/app1}
+%     \include{backmatter/app2}
+%     \include{backmatter/app3}
+%     \include{backmatter/app4}
+%     % \include{backmatter/appendixb}
+% \end{appendixes}
+
+% \printbibliography{}
+\clearpage
+\printglossary{}
+\end{document}
