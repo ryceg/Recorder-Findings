@@ -2,12 +2,12 @@
 
 
 \begin{itemize}
-    \item Textually, through the use of just text instructions. 
-    Examples would include `mute'.
-    \item Textually and pictographically, with text describing complex operations, aided by the shorthand of symbols. 
-    Examples would include `mute unmute'.
+\item Textually, through the use of just text instructions. 
+Examples would include `mute'.
+\item Textually and pictographically, with text describing complex operations, aided by the shorthand of symbols. 
+Examples would include `mute unmute'.
 	\item Pictographically; this would encompass all techniques that are divorced from the reality of the object, such as harmonics. 
-    As this is a very broad category, it can be broken down further:
+As this is a very broad category, it can be broken down further:
 		\item Pictographically with symbols, such as our harmonic example.
 		\item Pictographically, with mappings to physical objects, such as the pedal sign representing the lifting of the pedal, or the half-hole representing a partially occluded hole.
 \end{itemize}
@@ -15,8 +15,7 @@
 \section{Pre-existing notation}
 
 Maintaining compatibility with existing Western music notation is only possible if we follow the rules that are set out in existing symbols and structures.
-This means that we cannot mutate existing symbols, or ascribe a different meaning to their common one; 
-there are to be no uses of the piano pedal symbol to indicate a patch change on an electric keyboard.
+This means that we cannot mutate existing symbols, or ascribe a different meaning to their common one; there are to be no uses of the piano pedal symbol to indicate a patch change on an electric keyboard.
 Similarly, we cannot expect the user to intuitively understand symbols that don't follow the existing design language.
 
 We first establish that if using a pictographic notation, that there is a point at which the instrument's window cannot be occluded any further. 
@@ -42,8 +41,8 @@ The half-occlusion of the circle was confusing as the window is a square, and fi
 Claire was attempting to map a horn technique onto a recorder, with predictably confusing results. 
 
 \begin{figure}
-    \includegraphics[width=\linewidth]{./resources/Asset 10.pdf}
-    \caption{Half-closed circle style}\label{fig:Asset10}
+\includegraphics[width=\linewidth]{./resources/Asset 10.pdf}
+\caption{Half-closed circle style}\label{fig:Asset10}
 \end{figure}
 
 
@@ -51,24 +50,24 @@ I modified the notation to a rectangle, to represent the rectangular window, and
 For the sake of convenience, the level of occlusion has been mapped to a MIDI rate, of 0 being totally un-occluded, with 127 being fully occluded.
 
 \begin{figure}
-    \includegraphics[width=\linewidth]{./resources/Asset 3.pdf}
-    \caption{Modified to a rectangle}\label{fig:Asset3}
+\includegraphics[width=\linewidth]{./resources/Asset 3.pdf}
+\caption{Modified to a rectangle}\label{fig:Asset3}
 \end{figure}
 
 However, this was obviously inappropriate, as the action of occluding the window is not a left-to-right action.
 I changed it so the black increased upwards as the notation dictated further occlusion of the window as seen in \autoref{fig:Asset1}. 
 This mapped similar to how a MIDI expression level is displayed as a bar graph in DAWs. 
 \begin{figure}
-    \includegraphics[width=\linewidth]{./resources/Asset 1.pdf}
-    \caption{MIDI style range}\label{fig:Asset1}
+\includegraphics[width=\linewidth]{./resources/Asset 1.pdf}
+\caption{MIDI style range}\label{fig:Asset1}
 \end{figure}
 
 But this too posed difficulties, as the instrument's window wasn't on the bottom of the instrument, and the hand comes \emph{down} to occlude the window. 
 Rotating the image 180 degrees, I found the clearest notation yet; a picture that mapped both the intended one dimensional attribute of occlusion, as well as the action onto the instrument.
 
 \begin{figure}
-    \includegraphics[width=\linewidth]{./resources/Asset 2.pdf}
-    \caption{Inverted MIDI style range}\label{fig:Asset2}
+\includegraphics[width=\linewidth]{./resources/Asset 2.pdf}
+\caption{Inverted MIDI style range}\label{fig:Asset2}
 \end{figure}
 
 And yet, we found there was still an outlying use-case that was not accounted for; the action of pushing the finger (or, indeed, abstracted out to any object) into the window. 
@@ -78,26 +77,26 @@ while the occlusion has a constant point where no further occlusion is possible 
 Further attempts were made, experimenting with a perspective representation of the window to communicate a `further in' style in the single symbol; 
 
 \begin{figure}
-    \includegraphics[width=\linewidth]{./resources/Asset 4.pdf}
-    \caption{First attempt; without upper limit}\label{fig:Asset4}
+\includegraphics[width=\linewidth]{./resources/Asset 4.pdf}
+\caption{First attempt; without upper limit}\label{fig:Asset4}
 \end{figure}
 
 \begin{figure}
-    \includegraphics[width=\linewidth]{./resources/Asset 5.pdf}
-    \caption{Second attempt; upper limit defined}\label{fig:Asset5}
+\includegraphics[width=\linewidth]{./resources/Asset 5.pdf}
+\caption{Second attempt; upper limit defined}\label{fig:Asset5}
 \end{figure}
 
 \begin{figure}
-    \includegraphics[width=\linewidth]{./resources/Asset 6.pdf}
-    \caption{`Imaginary ghost finger' single perspective}\label{fig:Asset6}
+\includegraphics[width=\linewidth]{./resources/Asset 6.pdf}
+\caption{`Imaginary ghost finger' single perspective}\label{fig:Asset6}
 \end{figure}
 
 \begin{figure}
-    \includegraphics[width=\linewidth]{./resources/Asset 7.pdf}
-    \caption{Side view, upper limit defined}\label{fig:Asset7}
+\includegraphics[width=\linewidth]{./resources/Asset 7.pdf}
+\caption{Side view, upper limit defined}\label{fig:Asset7}
 \end{figure}
 
 \begin{figure}
-    \includegraphics[width=\linewidth]{./resources/Asset 9.pdf}
-    \caption{Side view, without upper limit}\label{fig:Asset9}
+\includegraphics[width=\linewidth]{./resources/Asset 9.pdf}
+\caption{Side view, without upper limit}\label{fig:Asset9}
 \end{figure}
