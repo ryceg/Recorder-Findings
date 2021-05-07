@@ -342,11 +342,9 @@
 	\global\let\location\relax}
 
 % Title page: renew \maketitle for thesis/dissertation
-\submissioninfo{%
-	An Exegesis Submitted to\par
-	Conservatorium of Music\par
-	in partial fulfilment of the requirements for the degree of \par
-	Bachelor of Music with Honours (or Bachelor of Music (Elite) with Honours)}
+\submissioninfo{
+	An investigative study
+}
 
 \department{}
 
