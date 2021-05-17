@@ -1,0 +1,4 @@
+\section{Interfaces}
+We find that a schema or interface is necessary in order to parse the various notational aspects of sheet music, so that there is no data loss upon mutation of the interface.
+What this means is that we need to understand what every part of a piece of sheet music (and the notation on it) communicates to the interpreter in order to be able know what can be changed.
+Without an understanding of the interface, a composer may remove an element that may seem unimportant (beams on notes, for example), and then find that the interface no longer communicates an element that is important to their composition (without beams, rhythmic information is lost).
