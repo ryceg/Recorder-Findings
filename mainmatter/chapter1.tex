@@ -1,17 +1,18 @@
 \section{Goals}
 
-In this paper, I examine the interfaces used to communicate music, and synthesise a working model of ways to notate techniques that can interface with traditional Western musical notation, and extend it.
+In this section, I examine the interfaces used to communicate music, and synthesise a working model of ways to notate techniques that can interface with traditional Western musical notation, and extend it.
 The argument being put forth is that much like a language, music notation evolves naturally, with new `words' being developed when no suitable existing `word' is found.
 The system which I propose is not a constructed language like Lojban or Esperanto, which take an opinionated and prescriptive approach to language. 
 Rather, the method is more like compiling a list of morphemes encountered in existing works, breaking down our existing musical language into its elements so that compoundment, affixation, and other methods of constructing new `words' may occur naturally.
 With this system, we will be able to establish a dictionary of existing symbols, as well as their function.
 Composers that seek to notate in new and different manners will be able to take the symbols and interfaces a la carte, and construct their own, specific to their needs.
+In instances of entirely novel concepts, this morphemic catalogue can be applied using mimetic principles to communicate intent clearly.
 
 \section{Literature Review}
 
-\subsection{Semiotics}
+\subsection{Overview of Semiotics}
 
-A brief overview of semiotics is necessary in order for any serious discussion to be had.
+A brief overview of semiotics is necessary in order to contextualise the intent and methodology that is used.
 Semiotics, the study of signs (read: meaningful communication), was invented concurrently by Ferdinand de Saussure and Charles Sanders Peirce independent of one another.\autocite[]{saussure}
 The most appreciable difference between their models was that while Saussure held that signs were made up of a signifier (the form of the sign) and signified (its meaning), Pierce's model also had an interpretant; the object that the audience interprets the signified as (since it is impossible to replicate meaning perfectly).\autocite[]{pierce}
 Signifiers are then broken up into three discrete categories; 
@@ -44,7 +45,7 @@ What the composer chooses to put on the page could be argued to be denotative, w
 
 Semiotics is particularly applicable in web design, where intuitive `notation' is sought after to reduce the `friction', or difficulty a user has navigating a site.
 We can learn many things from the research that has been done into how to use skeuomorphic design to convey an element's function.
-Our goal with constructing intuitive music notation is to reduce the `friction' just like a web designer.
+Our goal with constructing intuitive music notation is to reduce the `friction' just like a web designer, using design patterns that are intuitive even to people that are unfamiliar with the content.
 We can use the connotations of existing symbols to help infer how we can construct new symbols.
 As an example, the line that makes up a glissandi can be either straight, or wavy, as seen in \autoref{fig:Glissando}.
 \begin{figure}
@@ -57,8 +58,7 @@ In this way, we understand that the meaning of a symbol is tied inextricably wit
 In order to produce a document that can be used reliably, the work must either be totally objective (a fool's errand in the pursuit of extracting cultural understanding of signs), or cognisant of the pitfalls and assumptions made.
 To this end, the `cookbook' necessitates disclaimers specifying the assumptions made; terminology or notation used specifically in avant-garde or Renaissance music will not have any transitive qualities aiding its uptake to an audience that is not familiar with the source material.
 
-
-Some symbols are not compatible with one another; a properly engraved work will never have an upbow and downbow on the same note, as the two symbols fulfill the same function.
+Some symbols are not compatible with one another; a properly engraved work will never have an upbow and downbow on the same note, as the two symbols fulfill the same function (unless, of course, the two symbols are joined together, which denotes a rapid rebowing).
 This is what is known as a paradigmatic relationship; by virtue of the presence of one, it excludes the possibility of the other.
 Looking at web design, we can draw a somewhat rough parallel to drop-down menus; there's only one slot that can be filled.
 Other examples of paradigms would be the degree at which a French horn opens or mutes their instrument, which is not a binary, but a scale of `openness'.
@@ -66,30 +66,43 @@ Other examples of paradigms would be the degree at which a French horn opens or 
 Understanding the properties of a sign that are inherited from its history, context, and role informs what information is necessary to communicate to the reader in order for them to be able to make use of the `cookbook'.
 Without a cohesive and holistic (or rather, as holistic as is possible) treatment of the signs, the intent of the `cookbook' falls short; composers must be armed with the knowledge of the context in which the sign developed, and its use in order to be able to make informed decisions.
 
+
+
 \subsection{Argument}
+% The perhaps hyperbolically described `cult of the written score' in the 20th century New Complexicist movement saw the rise of composers prescribing more and more parameters.
 In the 20th century, the `cult of the written score' developed, in which the composer prescribed more and more parameters to be interpreted literally.\autocite[]{citation very much needed}
 This was in part fueled by contemporary composers being strongly opinionated in how their works should be interpreted, and partly because of the styles-- the sheer breadth of the number of parameters specified in New Complexicist works makes the interpreter pre-biased to assume that there is little room for interpretation.
-This has permeated through to an underlying culture of assuming that when performing a work by a living composer that, if they wished for it to be interpreted a specific way, they would have specified that.
-Unfortunately, notation is an imperfect representation of the perfect, Platonic ideal, which exists only in the mind of the composer. 
-Notation is the physical manifestation of a perfect ideal, imperfectly represented as best possible by the composer.
+This has permeated through to an underlying culture of assuming that when performing a work by a living composer that, if they wished for it to be interpreted a specific way, they would have specified that.\autocite[]{can't really cite this}
+There have been several notable theses on the philosophy and reasons behind the New Complexicist movement, and it would be ill-advised to retread tired arguments.
+All that is relevant to this study is that it can be argued that ultimately, music notation is an imperfect representation of the perfect, Platonic ideal, which exists only in the mind of the composer. 
+This is to say that notation is the physical manifestation of a perfect ideal, an interpretant which exists only in the composer's mind, imperfectly represented in the physical form.
 
 Floris Schuiling describes music notations as \begin{quotation}
 `interfaces for imagining virtual musical relations'
 \end{quotation}
 which is an apt description; similar meaning can be derived from verbal instructions, and the notation used is merely a vehicle through which to deliver the instructions on how to play the work.
 The end result of this is that the precise vehicle through which performers obtain their instructions can be modified, mutated, and otherwise changed to better represent the imagined musical relations as the composer envisages.
-This is done often when the traditional structure of Western music notation fails to account for some niche that it was not designed for; the aleatoric works of John Cage, stochastic aleatoricism of Lutoslawski, and many other 20th century composers, who sought to extend the artform to its metaphorical breaking point.
-Their modifications of notation have, to varying degrees, taken root, and become accepted into the canon as valid notation; it is unlikely that the reader would have any doubt of the intended effect if presented with a Bartok pizzicato symbol above a string instrument's note.
+This is done often when the traditional structure of Western music notation fails to account for some niche that it was not designed for; the aleatoric works of John Cage, stochastic aleatoricism of Lutoslawski, and many others who sought to extend the artform to its metaphorical breaking point.
+Their modifications and adaptations of notation have, to varying degrees, taken root, and become accepted into the canon as valid notation; it is unlikely that the reader would have any doubt of the intended effect if presented with a Bartok pizzicato symbol above a string instrument's note.
 However, these notations have been developed independent of one another, and in the current musical sphere, we are faced with an ever-increasing list of symbols to memorise, along with lengthy descriptions littering the frontmatter.
+Every composer that creates new notation (be it the notation of a technique, a method of notation, or an entire interface) is effectively treading new ground.
+On occasion, multiple notations are created for the same technique, such as the multitude of ways that composers communicate [TODO: find example technique with duplication].
+However, duplication of technique is not necessarily a bad thing; `hairpin' crescendos and textual instructions both serve largely the same function.
+In other cases, such as the notation for [TODO: find a better example than subharmonics] subharmonics, notations differ in specificity. 
+Crumb's notation method has the least specificity, denoting simply a `scratchy tone' [TODO: find Crumb's quote], while Kaija Saariaho specifies the relative degree of pressure to apply.
+Mari Kimura's method specifies the resultant pitch, but omits the relative pressure required to obtain the tone.
+These methods of notation are all for the same technique, but focus on different aspects, according to what is desired by the composer.
+It is this philosophy that this thesis intends to address; 
+providing a toolbox of components that a composer can use to construct new notation, as well as cataloguing existing notations so that composers may better communicate their intent, to make the interface that they create closer resemble the interpretant that exists in their head.
 
 Of particular interest is the work of Ellen Fallowfield, whose thesis, `CelloMap' website and recently, application, form a comprehensive and holistic review of the ways in which a performer may `map' actions onto a cello.\autocite[]{fallowfieldCelloMapHandbook2009,fallowfieldCelloMap}
 This non-opinionated and genericized method of cataloguing actions sees its contents applicable where a more specific approach would fall short, ensuring that it does not fall out of date.
 In a similar way, I aim to catalogue and genericize actions from a composer's perspective, providing a suite of tools with which a composer can construct a notation to suit any imagined circumstance; be it using an animated score that changes with time, a score seen within a VR headset, or any other mode that may develop in the future.
+
 There has been much research done into the ways that computers can interpret sheet music, an extension of OCR technology which has resulted in several market-ready tools such as PhotoScore. 
 More pursuant to this study are the developments of machine-readable formats such as the GUIDO music notation system, if only as examples of the parameters that must be accounted for.
-
-The thesis denm makes a comprehensive study of many of the strategies and reasons that performers will mark up a score with annotations. 
-Additionally, it goes into discussion of the various accessibility and printing issues associated with using CYMK colour in printed scores.\autocite[22--29]{bean}
+The thesis `denm' makes a comprehensive study of many of the strategies and reasons that performers will mark up a score with annotations. 
+Additionally, it goes into discussion of the various accessibility and printing issues associated with using CYMK colour in printed scores.\autocite[22--29]{beanDenmDynamicEnvironmental}
 denm (Dynamic Environmental Notation of Music) is a 
 
 Kurt Stone identifies many of the issues present in modern notation in his 1963 article in \emph{Perspectives of New Music}, and he states that \begin{quotation}
@@ -114,5 +127,15 @@ He continues, stating that \begin{quotation}
     On the other hand, performances are now often mere stabs in the direction of the composer's envisioned perfection of execution.
     The imprecision and variability of human performance are actually quite detrimental to the requirements of totally organized and predetermined works.\autocite[30--31]{stoneProblemsMethodsNotation1963}
 \end{quotation}
+
+This broad criticism of the failings of New Complexicists touches at the core of the issue; an imperfect relational system will produce imperfect results.
+
+In the paper `Animated Notation, Score Distribution and AR-VR Environments for Spectral Mimetic Transfer in Music Composition', which deals with applying graphic scores to a new, Virtual Reality context, Jonathan Bell and Benedict Carey note that \begin{quotation}
+    `the closer a musical unit gets to representing a direct action (that is, the movement of an object in space) the more mimetic it becomes.'\autocite[]{bellANIMATEDNOTATIONSCORE2019}
+\end{quotation} This observation is paralleled with the 
+
+While the generation of new methods of presenting music past the simple paper score is not a focus of this study, there is still much to be learned from the research that has been carried out in these fields.
+Animated scores, as pioneered by Cat Hope and others are a relatively straightforward development of the static score as it exists in printed form, augmented with features such as playback lines, and dynamic elements.
+`Inventing Malleable Scores: From Paper to Screen Based Scores', a paper by Arthur Clay introduces the concept of malleability to score creation and interpretation.
 
 This thesis aims to provide the composer with more tools to aid in the specificity of the work, so that they may more accurately and concisely communicate the desired techniques.
